@@ -1,9 +1,9 @@
 {
   "name": "limit-dialog",
   "author": "Christos Koutsiaris",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A simple dialog for showing limits",
-  "dist-tags": { "latest": "0.0.6"},
+  "dist-tags": { "latest": "0.0.7"},
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
   "types": "dist/types/components.d.ts",
