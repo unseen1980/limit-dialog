@@ -3,6 +3,7 @@
   "author": "Christos Koutsiaris",
   "version": "0.0.6",
   "description": "A simple dialog for showing limits",
+  "dist-tags": { "latest": "0.0.6"},
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
   "types": "dist/types/components.d.ts",
