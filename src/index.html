@@ -3,13 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
-  <title>Stencil Component Starter</title>
-  <script src="/build/mycomponent.js"></script>
+  <title>Now we are cooking!</title>
+  <script src="/build/limitdialog.js"></script>
 
 </head>
 <body>
 
-  <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+  <limit-dialog
+      header="Unlock your possibilities!"
+      description="As a free user, you’ve reached your limit of 5 projects. You can:"
+      list='[{"item":"Upgrade to a BUILD enterprise license by contacting your SAP Account Executive."} ,{"item": "Delete one or more projects."}]'
+      redirect-url='http://google.com'>
+  </limit-dialog>
 
+  <button id="openDialog">Open limit dialog</button>
+  <script>
+    const btn=document.getElementById('openDialog');
+    const dialog=document.getElementsByTagName('limit-dialog');
+    btn.addEventListener('click', () => dialog[0].open=true);
+  </script>
 </body>
 </html>
